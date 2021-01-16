@@ -73,13 +73,13 @@ export default function Index({
               </div>
             </header>
             <div className={styles.content}>{content}</div>
-            <ul className={"tag-list"}>
+            {/* <ul className={"tag-list"}>
               {tags.map((it, i) => (
                 <li key={i}>
                   <TagButton tag={getTag(it)} />
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </article>
           <footer>
             <div className={"social-list"}>
@@ -108,6 +108,7 @@ export default function Index({
             h1 {
               margin: 0 0 0.5rem;
               font-size: 2.25rem;
+              color: #ffffff;
             }
             .tag-list {
               list-style: none;
