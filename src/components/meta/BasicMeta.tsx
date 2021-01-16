@@ -4,15 +4,15 @@ import config from "../../lib/config";
 type Props = {
   title?: string;
   description?: string;
-  keywords?: string[];
-  author?: string;
+  // keywords?: string[];
+  // author?: string;
   url: string;
 };
 export default function BasicMeta({
   title,
   description,
-  keywords,
-  author,
+  // keywords,
+  // author,
   url,
 }: Props) {
   return (
@@ -24,7 +24,7 @@ export default function BasicMeta({
         name="description"
         content={description ? description : config.site_description}
       />
-      <meta
+      {/* <meta
         name="keywords"
         content={
           keywords
@@ -33,7 +33,7 @@ export default function BasicMeta({
         }
       />
       {author ? <meta name="author" content={author} /> : null}
-      <link rel="canonical" href={config.base_url + url} />
+      <link rel="canonical" href={config.base_url + url} /> */}
     </Head>
   );
 }

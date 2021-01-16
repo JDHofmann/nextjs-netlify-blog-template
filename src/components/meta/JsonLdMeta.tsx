@@ -7,18 +7,18 @@ import Head from "next/head";
 type Props = {
   url: string;
   title: string;
-  keywords?: string[];
+  // keywords?: string[];
   date: Date;
-  author?: string;
+  // author?: string;
   image?: string;
   description?: string;
 };
 export default function JsonLdMeta({
   url,
   title,
-  keywords,
+  // keywords,
   date,
-  author,
+  // author,
   image,
   description,
 }: Props) {
@@ -30,9 +30,9 @@ export default function JsonLdMeta({
           "@type": "BlogPosting",
           mainEntityOfPage: config.base_url + url,
           headline: title,
-          keywords: keywords ? undefined : keywords.join(","),
+          // keywords: keywords ? undefined : keywords.join(","),
           datePublished: formatISO(date),
-          author: author,
+          // author: author,
           image: image,
           description: description,
         })}

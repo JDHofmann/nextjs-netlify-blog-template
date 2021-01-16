@@ -34,11 +34,12 @@ export default function PostList({ posts, tags, pagination }: Props) {
         />
       </div>
       <ul className={"categories"}>
-        {tags.map((it, i) => (
+        {/* {tags.map((it, i) => (
           <li key={i}>
             <TagLink tag={it} />
           </li>
-        ))}
+        ))} */}
+        commented out code here
       </ul>
       <style jsx>{`
         .container {

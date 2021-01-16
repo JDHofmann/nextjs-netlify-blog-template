@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import styles from "../../public/styles/content.module.css";
-import Author from "../components/Author";
+// import Author from "../components/Author";
 import Copyright from "../components/Copyright";
 import Date from "../components/Date";
 import Layout from "../components/Layout";
@@ -11,7 +11,7 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 // import TagButton from "../components/TagButton";
-import { getAuthor } from "../lib/authors";
+// import { getAuthor } from "../lib/authors";
 // import { getTag } from "../lib/tags";
 
 type Props = {
@@ -20,25 +20,25 @@ type Props = {
   slug: string;
   description: string;
   // tags: string[];
-  author: string;
+  // author: string;
 };
 export default function Index({
   title,
   date,
   slug,
-  author,
+  // author,
   // tags,
   description,
 }: Props) {
   // const keywords = tags.map((it) => getTag(it).name);
-  const authorName = getAuthor(author).name;
+  // const authorName = getAuthor(author).name;
   return ({ children: content }) => {
     return (
       <Layout>
         <BasicMeta
           url={`/posts/${slug}`}
           title={title}
-          keywords={keywords}
+          // keywords={keywords}
           description={description}
         />
         <TwitterCardMeta
@@ -54,9 +54,9 @@ export default function Index({
         <JsonLdMeta
           url={`/posts/${slug}`}
           title={title}
-          keywords={keywords}
+          // keywords={keywords}
           date={date}
-          author={authorName}
+          // author={authorName}
           description={description}
         />
         <div className={"container"}>
@@ -67,9 +67,10 @@ export default function Index({
                 <div>
                   <Date date={date} />
                 </div>
-                <div>
+                {/* <div>
                   <Author author={getAuthor(author)} />
-                </div>
+                  Remove ME
+                </div> */}
               </div>
             </header>
             <div className={styles.content}>{content}</div>
