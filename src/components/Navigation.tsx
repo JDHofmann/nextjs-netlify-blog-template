@@ -43,7 +43,8 @@ export default function Navigation() {
               padding: 0;
               position: fixed;
               top: 0;
-              background-color: #303030;
+              background-color: #282828;
+              // background-color: #000000;
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -70,19 +71,24 @@ export default function Navigation() {
 
             @media (min-width: 769px) {
               .container {
-                width: 7rem;
+                width: 20vw;
                 display: block;
               }
               ul {
                 opacity: 1;
-                width: 7rem;
+                width: 20vw;
                 top: auto;
                 display: block;
+                border-right: 1px solid #606060;
+                border-top: 1px solid #606060;
+                box-shadow: inset 0 0 5px #606060;
+                border-radius: 0 10px 0 0;
                 transform: translateY(0);
+                padding: 5vh 0;
               }
               li {
-                font-size: 1rem;
-                padding: 0;
+                font-size: 1.5rem;
+                padding: 0 3vw;
               }
             }
           `}
