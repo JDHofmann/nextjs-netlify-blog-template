@@ -12,16 +12,16 @@ export function SocialList({}) {
         target="_blank"
         rel="noopener"
       >
-        <Twitter width={24} height={24} fill={"#222"} />
+        <Twitter width={24} height={24} fill={"#fff"} />
       </a>
-      <a
+      {/* <a
         title="GitHub"
         href={`https://github.com/${config.github_account}`}
         target="_blank"
         rel="noopener"
       >
         <GitHub width={24} height={24} fill={"#222"} />
-      </a>
+      </a> */}
       <style jsx>{`
         a {
           display: inline-block;
