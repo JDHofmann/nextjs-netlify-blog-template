@@ -22,12 +22,13 @@ export default function Layout({ children }: Props) {
         {`
           .root {
             display: block;
-            padding: 4rem 0;
+            // padding: 4rem 0;
             box-sizing: border-box;
             height: 100%;
           }
           main {
             display: flex;
+            padding-top: 6em;
             min-height: 100%;
           }
           @media (min-width: 769px) {

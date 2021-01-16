@@ -59,7 +59,7 @@ export default function Navigation() {
             li {
               margin-bottom: 1.75rem;
               font-size: 2rem;
-              padding: 0 1.5rem 0 0;
+              padding: 0 20vw 0 0;
             }
             li:last-child {
               margin-bottom: 0;
@@ -79,10 +79,10 @@ export default function Navigation() {
                 width: 20vw;
                 top: auto;
                 display: block;
-                border-right: 1px solid #606060;
-                border-top: 1px solid #606060;
-                box-shadow: inset 0 0 5px #606060;
-                border-radius: 0 10px 0 0;
+                // border-right: 1px solid #606060;
+                // border-top: 1px solid #606060;
+                box-shadow: 0 0 3px 1px #ff009060;
+                // border-radius: 0 5px 0 0;
                 transform: translateY(0);
                 padding: 5vh 0;
               }
