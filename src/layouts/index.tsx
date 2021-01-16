@@ -10,16 +10,16 @@ import JsonLdMeta from "../components/meta/JsonLdMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
-import TagButton from "../components/TagButton";
+// import TagButton from "../components/TagButton";
 import { getAuthor } from "../lib/authors";
-import { getTag } from "../lib/tags";
+// import { getTag } from "../lib/tags";
 
 type Props = {
   title: string;
   date: Date;
   slug: string;
   description: string;
-  tags: string[];
+  // tags: string[];
   author: string;
 };
 export default function Index({
@@ -27,10 +27,10 @@ export default function Index({
   date,
   slug,
   author,
-  tags,
+  // tags,
   description,
 }: Props) {
-  const keywords = tags.map((it) => getTag(it).name);
+  // const keywords = tags.map((it) => getTag(it).name);
   const authorName = getAuthor(author).name;
   return ({ children: content }) => {
     return (
@@ -109,16 +109,6 @@ export default function Index({
               margin: 0 0 0.5rem;
               font-size: 2.25rem;
               color: #ffffff;
-            }
-            .tag-list {
-              list-style: none;
-              text-align: right;
-              margin: 1.75rem 0 0 0;
-              padding: 0;
-            }
-            .tag-list li {
-              display: inline-block;
-              margin-left: 0.5rem;
             }
             .social-list {
               margin-top: 3rem;
