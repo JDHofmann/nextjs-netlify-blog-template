@@ -7,7 +7,7 @@ import Pagination from "./Pagination";
 
 type Props = {
   posts: PostContent[];
-  tags: TagContent[];
+  // tags: TagContent[];
   pagination: {
     current: number;
     pages: number;
