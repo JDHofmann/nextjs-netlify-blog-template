@@ -1,9 +1,9 @@
 import React from "react";
 import { PostContent } from "../lib/posts";
 import PostItem from "./PostItem";
-import TagLink from "./TagLink";
+// import TagLink from "./TagLink";
 import Pagination from "./Pagination";
-import { TagContent } from "../lib/tags";
+// import { TagContent } from "../lib/tags";
 
 type Props = {
   posts: PostContent[];
@@ -33,14 +33,14 @@ export default function PostList({ posts, tags, pagination }: Props) {
           }}
         />
       </div>
-      <ul className={"categories"}>
-        {/* {tags.map((it, i) => (
+      {/* <ul className={"categories"}>
+        {tags.map((it, i) => (
           <li key={i}>
             <TagLink tag={it} />
           </li>
-        ))} */}
+        ))}
         commented out code here
-      </ul>
+      </ul> */}
       <style jsx>{`
         .container {
           display: flex;

@@ -79,9 +79,9 @@ export default function Navigation() {
                 width: 20vw;
                 top: auto;
                 display: block;
-                // border-right: 1px solid #606060;
+                border-right: 1px solid #606060;
                 // border-top: 1px solid #606060;
-                box-shadow: 0 0 3px 1px #ff009060;
+                // box-shadow: 0 0 3px 1px #ff009060;
                 // border-radius: 0 5px 0 0;
                 transform: translateY(0);
                 padding: 5vh 0;
